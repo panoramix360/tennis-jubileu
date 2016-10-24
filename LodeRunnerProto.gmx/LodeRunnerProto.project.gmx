@@ -5,11 +5,32 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\spr_ground</sprite>
+    <sprite>sprites\spr_player</sprite>
+    <sprite>sprites\spr_stair</sprite>
+  </sprites>
   <backgrounds name="background">
     <background>background\bg_room</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\grid_collision.gml</script>
+  </scripts>
+  <objects name="objects">
+    <objects name="Debug Objects">
+      <object>objects\obj_grid</object>
+    </objects>
+    <objects name="Player">
+      <object>objects\obj_player</object>
+    </objects>
+    <objects name="Level">
+      <object>objects\obj_ground</object>
+      <object>objects\obj_stair</object>
+      <object>objects\obj_solid</object>
+    </objects>
+    <object>objects\obj_game</object>
+  </objects>
   <rooms name="rooms">
     <room>rooms\rm_level1</room>
   </rooms>
